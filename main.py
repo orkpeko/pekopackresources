@@ -1,10 +1,8 @@
 from tkinter import *
 import os
 import shutil
-import json
 import requests
-import wget
-import ctypes, sys
+import sys
 import zipfile
 
 def rgb_hack(rgb):
@@ -94,7 +92,13 @@ labeltu = Label(window, text=f"Updates:\n{api_rqt()}", width=30, fg="#FFFFFF", b
 labeltu.place(rely=0.3, relx=0.7, x=0, y=0, anchor=N)
 
 diren.delete(0, "end")
-diren.insert(0, f"{os.environ['USERPROFILE']}\\AppData\\Roaming\\.minecraft")
+
+if sys.platform.startswith("win32"):
+    diren.insert(0, f"{os.environ['USERPROFILE']}\\AppData\\Roaming\\.minecraft")
+elif sys.platform.startswith("linux"):
+    diren.insert(0, f"{os.environ['PWD']}\\.minecraft")
+else:
+    print("macos isnt supported")
 
 txtpro = Label(window, text="github.com/orkpeko")
 txtpro.place(rely=1, relx=1, x=0, y=0, anchor=SE)
