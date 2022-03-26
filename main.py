@@ -79,7 +79,7 @@ labeluu.place(rely=0.05, relx=0.5, x=0, y=0, anchor=N)
 buttonm = Button(window, text="Download Modpack (OF)", width=30, command=clickdownloadmodso)
 buttonm.place(rely=0.67, relx=0.3, x=0, y=0, anchor=N)
 
-buttonm = Button(window, text="Download Modpack (Sodium)", width=30, command=clickdownloadmodss)
+buttonm = Button(window, text="DL Sodium (unsupported)", width=30, command=clickdownloadmodss)
 buttonm.place(rely=0.73, relx=0.3, x=0, y=0, anchor=N)
 
 labelmu = Label(window, text=f"Updates:\n{api_rqm()}", width=30, fg="#FFFFFF", bg="#000000")
