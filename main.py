@@ -76,10 +76,10 @@ diren.place(rely=0., relx=0.5, x=0, y=0, anchor=N)
 labeluu = Label(window, text=f"Updater Updates:\n{api_rqu()}", width=300, fg="#FFFFFF", bg="#000000")
 labeluu.place(rely=0.05, relx=0.5, x=0, y=0, anchor=N)
 
-buttonm = Button(window, text="Download Modpack (OF)", width=30, command=clickdownloadmodso)
+buttonm = Button(window, text="Download Optifine", width=30, command=clickdownloadmodso)
 buttonm.place(rely=0.67, relx=0.3, x=0, y=0, anchor=N)
 
-buttonm = Button(window, text="DL Sodium (unsupported)", width=30, command=clickdownloadmodss)
+buttonm = Button(window, text="Download Sodium", width=30, command=clickdownloadmodss)
 buttonm.place(rely=0.73, relx=0.3, x=0, y=0, anchor=N)
 
 labelmu = Label(window, text=f"Updates:\n{api_rqm()}", width=30, fg="#FFFFFF", bg="#000000")
